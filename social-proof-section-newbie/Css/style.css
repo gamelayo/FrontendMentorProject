@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  font-size: 15px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-container {
+  display: flex;
+  width: 55rem;
+  height: 14rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-container {
+  width: 22rem;
+}
+.first-container p {
+  line-height: 1rem;
+  color: hsl(303, 10%, 53%);
+}
+.second-container {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-container {
+  width: 56rem;
+  height: 14rem;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  margin-bottom: 15px;
+  color: hsl(300, 43%, 22%);
+}
+h2,
+h3 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+}
+p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.star {
+  height: 2.7rem;
+  width: 90%;
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.star p {
+  color: hsl(300, 43%, 22%);
+}
+.star-1 {
+  align-self: flex-start;
+}
+.star-2 {
+  align-self: center;
+}
+.star-3 {
+  align-self: flex-end;
+}
+
+.image {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+}
+.image-container {
+  width: 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+.box {
+  background-color: hsl(300, 43%, 22%);
+  width: 17.9rem;
+  height: 12rem;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+.box p {
+  line-height: 1.2rem;
+}
+.box-1 {
+  align-self: flex-start;
+}
+.box-2 {
+  align-self: center;
+}
+.box-3 {
+  align-self: flex-end;
+}
+.image-title h3,
+p {
+  margin: 0;
+}
+.image-title p {
+  color: hsl(333, 80%, 67%);
+}
+
+@media (max-width: 450px) {
+  main {
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+      url("../images/bg-pattern-bottom-mobile.svg");
+  }
+  .top-container {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 60px 0 30px 0;
+    align-items: center;
+  }
+  .bottom-container {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .first-container {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .star {
+    flex-direction: column;
+    width: 17.9rem;
+    height: 3.2rem;
+    align-self: center;
+  }
+  .box {
+    align-self: center;
+    margin-top: 10px;
+  }
+}

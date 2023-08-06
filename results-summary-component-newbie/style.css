@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: myFont;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: myFont-x-bold;
+  src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  font-family: myFont;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.container1 {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px;
+}
+.container1 .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 50%;
+}
+.container1 h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: hsl(241, 100%, 89%);
+}
+.circle h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  font-family: myFont-x-bold;
+}
+.circle p {
+  color: hsl(241, 100%, 89%);
+}
+.header {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.container1 .p {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 40px;
+  color: hsl(241, 100%, 89%);
+}
+.container2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container2 h1 {
+  align-self: flex-start;
+  margin-top: 20px;
+
+  font-size: large;
+  font-weight: 600;
+}
+.paragraph {
+  width: 80%;
+}
+.box {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 8px;
+}
+.box1 {
+  background-color: hsla(0, 100%, 95%);
+}
+.box1 .image-box {
+  color: hsl(0, 100%, 67%);
+}
+.box2 {
+  background-color: hsla(39, 100%, 95%);
+}
+.box2 .image-box {
+  color: hsl(39, 100%, 56%);
+}
+.box3 {
+  background-color: hsl(166, 100%, 95%);
+}
+.box3 .image-box {
+  color: hsl(166, 100%, 37%);
+}
+.box4 {
+  background-color: hsla(234, 85%, 95%);
+}
+.box4 .image-box {
+  color: hsl(234, 85%, 45%);
+}
+.image-box {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 10px;
+}
+.paragraph-box {
+  padding-right: 10px;
+}
+.button {
+  margin-top: 30px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: #ffff;
+  padding: 15px 2rem;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  font-size: large;
+  font-weight: 400;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(234, 85%, 45%);
+}
+
+.paragraph-box h3 {
+  color: hsl(241, 100%, 89%);
+}
+.paragraph-box h3 strong {
+  color: hsl(224, 30%, 27%);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    background-color: hsl(0, 0%, 100%);
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .container1 {
+    width: 100%;
+  }
+  .container1 {
+    border-radius: 0 0 20px 20px;
+  }
+  .container2 {
+    width: 90%;
+  }
+
+  .container1 .p {
+    width: 75%;
+  }
+  .button {
+    margin-top: 30px;
+  }
+}
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
