@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.box1 {
+  position: relative;
+  grid-column: 1 / span 2;
+  background-color: hsl(263, 55%, 52%);
+}
+.box1 .first {
+  z-index: 99;
+}
+.quote {
+  position: absolute;
+  z-index: 1;
+  right: 100px;
+  color: hsl(263, 55%, 70%);
+}
+.box2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.box3 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  background-color: hsl(0, 0%, 100%);
+}
+.box3 .first,
+.box4 .first {
+  color: hsl(217, 19%, 35%);
+}
+.box4 {
+  background-color: hsl(0, 0%, 100%);
+}
+.box5 {
+  grid-column: 2 / span 2;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  height: 35px;
+  width: 35px;
+}
+.image-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container h1 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: hsl(210, 46%, 95%);
+}
+.container P {
+  font-size: 0.6rem;
+  color: hsl(0, 0%, 81%);
+}
+.box3 .container h1,
+.box4 .container h1 {
+  color: hsl(217, 19%, 35%);
+}
+.first {
+  font-weight: 600;
+  color: white;
+  padding: 0px 20px 20px 20px;
+}
+.second {
+  color: hsl(0, 0%, 81%);
+  padding: 0px 20px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin: 40px 0 40px 0;
+  }
+  .quote {
+    right: 20px;
+  }
+  .box1 {
+    order: 1;
+  }
+  .box2 {
+    order: 2;
+  }
+  .box3 {
+    order: 5;
+  }
+  .box4 {
+    order: 3;
+  }
+  .box5 {
+    order: 4;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
