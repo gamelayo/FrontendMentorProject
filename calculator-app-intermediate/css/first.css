@@ -1,0 +1,41 @@
+#one {
+  opacity: 1;
+  background-color: hsl(6, 63%, 50%);
+}
+
+main {
+  background-color: hsl(222, 26%, 31%);
+}
+.tri-state-toggle {
+  background-color: hsl(223, 31%, 20%);
+}
+.p {
+  color: white;
+}
+input[type="text"] {
+  background-color: hsl(224, 36%, 15%);
+}
+.container {
+  background-color: hsl(223, 31%, 20%);
+}
+.item-button {
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+}
+.item-button:hover {
+  background-color: hsl(28, 16%, 65%);
+}
+.seperate {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+}
+.seperate:hover {
+  background-color: hsl(224, 28%, 35%);
+}
+.equal {
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+}
+.equal:hover {
+  background-color: hsl(6, 70%, 34%);
+}

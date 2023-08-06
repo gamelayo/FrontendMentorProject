@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link id="theme" rel="stylesheet" href="css/first.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <p class="p">calc</p>
+        <div class="box1">
+          <p class="p">THEME</p>
+          <div class="box2">
+            <div class="tri-name">
+              <p class="p">1</p>
+              <p class="p">2</p>
+              <p class="p">3</p>
+            </div>
+            <div class="tri-state-toggle">
+              <label></label>
+              <input class="button" type="radio" name="toggle" id="one" />
+              <label></label>
+              <input class="button" type="radio" name="toggle" id="two" />
+              <label></label>
+              <input class="button" type="radio" name="toggle" id="three" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display"><input type="text" id="result" class="p" /></div>
+      <div class="container">
+        <div class="item">
+          <input
+            value="7"
+            type="button"
+            onclick="display('7')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="8"
+            type="button"
+            onclick="display('8')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="9"
+            type="button"
+            onclick="display('9')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input value="DEL" type="button" onclick="del()" class="seperate" />
+        </div>
+        <div class="item">
+          <input
+            value="4"
+            type="button"
+            onclick="display('4')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="5"
+            type="button"
+            onclick="display('5')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="6"
+            type="button"
+            onclick="display('6')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="+"
+            type="button"
+            onclick="display('+')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="1"
+            type="button"
+            onclick="display('1')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="2"
+            type="button"
+            onclick="display('2')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="3"
+            type="button"
+            onclick="display('3')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="-"
+            type="button"
+            onclick="display('-')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="."
+            type="button"
+            onclick="display('.')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="0"
+            type="button"
+            onclick="display('0')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="/"
+            type="button"
+            onclick="display('/')"
+            class="item-button"
+          />
+        </div>
+        <div class="item">
+          <input
+            value="X"
+            type="button"
+            onclick="display('*')"
+            class="item-button"
+          />
+        </div>
+        <div class="item reset">
+          <input
+            value="RESET"
+            type="button"
+            onclick="clearScreen()"
+            class="seperate"
+          />
+        </div>
+        <div class="item enter">
+          <input value="=" type="button" onclick="calculate()" class="equal" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/GAMEL06" target="_blank">Gamel Ayode</a>.
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

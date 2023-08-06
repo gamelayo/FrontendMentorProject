@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.box {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+}
+.box1 {
+  display: flex;
+  gap: 10px;
+}
+.box1 p {
+  align-self: flex-end;
+  font-size: 12px;
+  font-weight: 400;
+}
+.tri-name {
+  display: flex;
+  justify-content: space-around;
+}
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  appearance: none;
+  border-radius: 50%;
+  opacity: 0;
+  margin: 1px;
+}
+input:hover {
+  cursor: pointer;
+}
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+.display {
+  width: 320px;
+  height: 60px;
+}
+input[type="text"] {
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  border: none;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+.container {
+  width: 320px;
+  display: grid;
+  /* gap: 10px; */
+  border-radius: 5px;
+  grid-template-columns: auto auto auto auto;
+}
+.item {
+  width: 60px;
+  height: 40px;
+  margin: 10px;
+}
+.reset {
+  width: 140px;
+  grid-column: 1/3;
+}
+.enter {
+  width: 140px;
+  grid-column: 3/5;
+}
+input[type="button"] {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
