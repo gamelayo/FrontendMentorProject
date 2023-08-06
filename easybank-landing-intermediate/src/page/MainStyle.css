@@ -1,0 +1,128 @@
+/* hero-section styles */
+.hero-section {
+  display: grid;
+  gap: var(--spacing-25);
+  padding-bottom: var(--spacing-90);
+}
+
+.hero-img {
+  background-image: url(../images/bg-intro-mobile.svg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero-img-top {
+  display: block;
+  margin-inline: auto;
+  margin-top: -120px;
+  width: 90%;
+  max-width: 26.875rem;
+  z-index: 2;
+}
+
+.hero-intro {
+  display: grid;
+  gap: var(--spacing-20);
+  place-items: center;
+}
+.hero-intro h1 {
+  font-size: var(--spacing-30);
+  line-height: normal;
+}
+.hero-intro p {
+  text-align: justify;
+}
+.container {
+  padding-left: 10%;
+  padding-right: 15%;
+}
+@media (min-width: 43.75rem) {
+  .hero-section {
+    /* reset mobile padding-bottom */
+    padding-bottom: 0;
+    /*  */
+    grid-template-columns: 50% 48%;
+    place-items: center;
+    background-color: var(--gray-very-light);
+    min-height: 509px;
+    gap: 2%;
+  }
+
+  .hero-intro {
+    order: 1;
+    place-items: first baseline;
+    margin-left: var(--spacing-25);
+  }
+
+  .hero-intro h1 {
+    font-size: var(--spacing-40);
+    line-height: normal;
+    text-align: left;
+  }
+
+  .hero-intro > p {
+    font-size: var(--spacing-10);
+    text-align: left;
+  }
+
+  .hero-img {
+    order: 2;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-position-y: -224px;
+    background-position-x: -69px;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: clip;
+  }
+
+  .hero-img-top {
+    position: absolute;
+    top: 2.1875rem;
+    right: -3.9375rem;
+    margin: 0;
+    width: 106%;
+  }
+}
+
+@media (min-width: 57.5rem) {
+  .hero-img-top {
+    max-width: 37rem;
+    top: -5rem;
+  }
+}
+
+@media (min-width: 64.125rem) {
+  .hero-intro {
+    margin-left: 2.375rem;
+  }
+}
+
+@media (min-width: 77.8125rem) {
+  .hero-intro {
+    margin-left: 2.5625rem;
+  }
+}
+
+@media (min-width: 66rem) {
+  .hero-intro h1 {
+    font-size: var(--spacing-40);
+  }
+}
+
+@media (min-width: 71.25rem) {
+  .hero-intro h1 {
+    font-size: var(--spacing-50);
+  }
+  .hero-intro p {
+    font-size: var(--spacing-20);
+  }
+}
+
+@media (min-width: 79.1875rem) {
+  .hero-intro h1 {
+    max-width: 80%;
+  }
+}

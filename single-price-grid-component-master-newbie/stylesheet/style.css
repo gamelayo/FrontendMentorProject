@@ -1,0 +1,165 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  color: rgba(46,196,217,1);
+  margin: 1.2rem 1rem;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+ color: hsl(204, 43%, 93%);
+  margin: 1.4rem 1rem;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+p {
+ color: hsl(204, 43%, 93%);
+  margin: 0.2rem 1rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+p strong{
+  font-size: 20px;
+}
+
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.grid-contianer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: center;
+  margin:  auto;
+  height: auto;
+}
+
+.whole-contianer {}
+
+.contianer {
+
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+}
+
+.top-contianer {
+  background-color: #ffff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.top-contianer p{
+  color: rgba(164,171,175,1);
+}
+.top-contianer h2{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: rgba(192,223,52,1);
+}
+
+
+.middle-contianer {
+  background-color: #24a19c;
+}
+
+.middle-contianer p{
+  margin-bottom: 1rem;
+}
+
+
+.bottom-contianer {
+  background-color: #62c4c3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-contianer p{
+ width: 70%;
+ font-size: 16px;
+ font-family: 'Karla', sans-serif;
+ font-weight: 400;
+}
+
+footer {}
+
+  .myButton {
+	box-shadow:inset -1px 0px 5px -1px #a4e271;
+	background:linear-gradient(to bottom, #a3d62b 5%, #77a809 100%);
+	background-color:#a3d62b;
+	border-radius:4px;
+	border:2px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:14px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 2px #528009;
+  margin: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #a3d62b 100%);
+	background-color:#77a809;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+@media (min-width:40rem) {
+  .grid-contianer {
+    display: grid;
+    grid-template-columns: 18rem 18rem;
+    align-content: center;
+    justify-content: center;
+    height: 90%;
+    border-radius: 5%;
+  }
+
+  .contianer {
+    height: 13rem;
+  }
+
+  .top-contianer {
+    grid-column: 1 / 3;
+      height: 11rem;
+
+  }
+
+.middle-contianer{
+  border-bottom-left-radius: 5px;
+
+}
+
+.bottom-contianer{
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+}
+.middle-contianer h2,
+.bottom-contianer h2{
+  margin-bottom: 0.7rem;
+}
+}

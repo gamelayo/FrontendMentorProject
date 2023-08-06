@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+:root {
+  @apply bg-secondary text-primary;
+}
+
+.dark {
+  --color-bg-primary: #2b3945;
+  --color-bg-secondary: #202c37;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e2e8f0;
+}
+.color {
+  color: #111517;
+}
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #fafafa;
+  --color-text-primary: #111517;
+  --color-text-secondary: #4a5568;
+}

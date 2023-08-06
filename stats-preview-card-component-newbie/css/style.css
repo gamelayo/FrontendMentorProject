@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container-mobile {
+  display: none;
+}
+
+.image {
+  width: 30rem;
+  height: 24.8rem;
+  background: linear-gradient(
+      0deg,
+      rgba(149, 3, 240, 0.4),
+      rgba(82, 43, 88, 0.6)
+    ),
+    url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0 10px 10px 0;
+}
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  margin: 20px 35px;
+}
+.h1-color {
+  color: hsl(277, 64%, 61%);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin: 20px 35px;
+  font-size: 13px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: 24.8rem;
+  width: 30rem;
+  padding-right: 25px;
+  justify-content: center;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0 0 10px;
+}
+
+.second-paragraph {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.like {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+.num {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.upper {
+  font-size: 11px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (max-width: 450px) {
+  .image-container-desktop {
+    display: none;
+  }
+  .image-container-mobile {
+    display: block;
+  }
+
+  .image {
+    background: linear-gradient(
+        0deg,
+        rgba(170 92 219 / 40%),
+        rgba(170 0 200 / 60%)
+      ),
+      url(../images/image-header-mobile.jpg);
+    width: 20rem;
+    height: 15rem;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  main {
+    flex-direction: column;
+    height: 100vh;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .body-container {
+    width: 20rem;
+    height: 30rem;
+    padding-right: 0;
+    border-radius: 0 0 10px 10px;
+    padding-top: 10px;
+  }
+
+  .second-paragraph {
+    flex-direction: column;
+    align-items: center;
+  }
+  .like {
+    align-items: center;
+    margin: 10px;
+  }
+}
